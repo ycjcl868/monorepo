@@ -13,8 +13,14 @@
   "files": ["dist", "*/**/*.d.ts"],
   "type": "module",
   "exports": {
-    "./types": "./dist/types/index.js",
-    "./utils": "./dist/utils/index.js"
+    "./types": {
+      "import": "./dist/types/index.js",
+      "require": "./dist/types/index.cjs"
+    },
+    "./utils": {
+      "import": "./dist/utils/index.js",
+      "require": "./dist/utils/index.cjs"
+    }
   },
   "devDependencies": {
     "tsup": "^5.10.3",
