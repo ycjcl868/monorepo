@@ -40,9 +40,11 @@ importers:
 
   apps/node-app:
     specifiers:
+      '@infras/rs': workspace:*
       '@infras/shared': workspace:*
       '@infras/ui': workspace:*
     dependencies:
+      '@infras/rs': link:../../packages/rs
       '@infras/shared': link:../../packages/shared
       '@infras/ui': link:../../packages/ui
 
@@ -77,6 +79,51 @@ importers:
       react-scripts: 5.0.0_react@17.0.2+typescript@4.5.4
       typescript: 4.5.4
       web-vitals: 2.1.2
+
+  packages/rs:
+    specifiers:
+      '@napi-rs/cli': ^2.0.0
+    devDependencies:
+      '@napi-rs/cli': 2.0.0
+
+  packages/rs/npm/android-arm-eabi:
+    specifiers: {}
+
+  packages/rs/npm/android-arm64:
+    specifiers: {}
+
+  packages/rs/npm/darwin-arm64:
+    specifiers: {}
+
+  packages/rs/npm/darwin-x64:
+    specifiers: {}
+
+  packages/rs/npm/freebsd-x64:
+    specifiers: {}
+
+  packages/rs/npm/linux-arm-gnueabihf:
+    specifiers: {}
+
+  packages/rs/npm/linux-arm64-gnu:
+    specifiers: {}
+
+  packages/rs/npm/linux-arm64-musl:
+    specifiers: {}
+
+  packages/rs/npm/linux-x64-gnu:
+    specifiers: {}
+
+  packages/rs/npm/linux-x64-musl:
+    specifiers: {}
+
+  packages/rs/npm/win32-arm64-msvc:
+    specifiers: {}
+
+  packages/rs/npm/win32-ia32-msvc:
+    specifiers: {}
+
+  packages/rs/npm/win32-x64-msvc:
+    specifiers: {}
 
   packages/shared:
     specifiers:
@@ -1735,6 +1782,12 @@ packages:
       '@types/yargs': 16.0.4
       chalk: 4.1.2
     dev: false
+
+  /@napi-rs/cli/2.0.0:
+    resolution: {integrity: sha512-2R24dtZoPYb9TxIQJbhUSloSVK4HGfa6CVn5JgUeO9WTvZecC5i8WaFm2CC7GWbYmDlPu2AnULwaSr+AP7r1RQ==}
+    engines: {node: '>= 10'}
+    hasBin: true
+    dev: true
 
   /@napi-rs/triples/1.0.3:
     resolution: {integrity: sha512-jDJTpta+P4p1NZTFVLHJ/TLFVYVcOqv6l8xwOeBKNPMgY/zDYH/YH7SJbvrr/h1RcS9GzbPcLKGzpuK9cV56UA==}
