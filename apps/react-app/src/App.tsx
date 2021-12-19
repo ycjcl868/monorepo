@@ -1,5 +1,6 @@
 import { AppType } from '@infras/shared/types';
 import { sum } from '@infras/shared/utils';
+import { Component } from '@infras/ui/react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <Component />
         <p>
         AppType.Web is {AppType.Web}
         </p>
