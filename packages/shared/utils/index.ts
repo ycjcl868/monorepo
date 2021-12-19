@@ -1,5 +1,2 @@
 export const foo = 2;
-export enum AppType {
-  Web = 1,
-  Mobile = 2,
-}
+export const sum = (a: number, b: number) => a + b;

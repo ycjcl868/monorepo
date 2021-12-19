@@ -1,5 +1,5 @@
-const { foo } = require('@infras/shared/utils');
-const { sum } = require('@infras/rs');
+const { AppType } = require('@infras/shared/types');
+const { sum } = require('@infras/shared/utils');
 
-console.log('Node.js foo:', foo);
-console.log('Node.js call rs \`sum\`:', sum(1, 1));
+console.log('Node.js AppType.Web:', AppType.Web);
+console.log('Node.js \`sum(1, 1)\`:', sum(1, 1));

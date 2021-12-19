@@ -1,8 +1,7 @@
-import { foo } from '@infras/shared/utils';
+import { AppType } from '@infras/shared/types';
+import { sum } from '@infras/shared/utils';
 import logo from './logo.svg';
 import './App.css';
-
-console.log('foo', foo);
 
 function App() {
   return (
@@ -10,7 +9,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+        AppType.Web is {AppType.Web}
+        </p>
+        <p>
+        sum(1, 1) is {sum(1, 1)}
         </p>
         <a
           className="App-link"
