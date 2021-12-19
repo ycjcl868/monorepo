@@ -1,7 +1,7 @@
 {
   "name": "@infras/ui",
   "version": "1.0.0",
-  "description": "",
+  "description": "An infrastructure monorepo ui library for all front-end apps.",
   "type": "module",
   "exports": {
     "./react": {
@@ -20,6 +20,7 @@
     "dev": "rollup --config rollup.config.js --watch",
     "build": "rollup --config rollup.config.js",
     "postinstall": "npm run build",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "peerDependencies": {
@@ -45,7 +46,6 @@
     "rollup-plugin-typescript2": "^0.31.1",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-vue": "^6.0.0",
-    "vue": "^3.0.0",
     "tslib": "^2.3.0"
   },
   "keywords": [],
