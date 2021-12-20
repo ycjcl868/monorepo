@@ -2,6 +2,7 @@
   "name": "@infras/ui",
   "version": "1.0.0",
   "description": "An infrastructure monorepo ui library for all front-end apps.",
+  "private": true,
   "type": "module",
   "exports": {
     "./react": {

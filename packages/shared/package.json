@@ -1,6 +1,7 @@
 {
   "name": "@infras/shared",
   "version": "0.0.1",
+  "private": true,
   "description": "An infrastructure monorepo shared library for all projects and apps.",
   "scripts": {
     "postinstall": "npm run build",
