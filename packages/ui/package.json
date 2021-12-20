@@ -4,6 +4,10 @@
   "description": "An infrastructure monorepo ui library for all front-end apps.",
   "private": true,
   "type": "module",
+  "browser": {
+    "./react": "./dist/react/index.js",
+    "./vue": "./dist/vue/index.js"
+  },
   "exports": {
     "./react": {
       "import": "./es/react/index.js",
