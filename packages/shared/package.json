@@ -11,6 +11,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",
+  "browser": {
+    "./types": "./dist/types/index.js",
+    "./utils": "./dist/utils/index.js"
+  },
   "exports": {
     "./types": {
       "import": "./dist/types/index.js",
