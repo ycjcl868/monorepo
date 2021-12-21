@@ -2,6 +2,7 @@
   "name": "@infras/rs",
   "version": "0.0.0",
   "main": "index.js",
+  "type": "commonjs",
   "types": "index.d.ts",
   "private": true,
   "napi": {
