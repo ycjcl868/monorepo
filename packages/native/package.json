@@ -1,6 +1,7 @@
 {
   "name": "@infras/native",
   "version": "0.0.0",
+  "private": true,
   "type": "commonjs",
   "main": "index.js",
   "types": "index.d.ts",
@@ -22,5 +23,10 @@
     "build:debug": "napi build --platform",
     "prepublishOnly": "napi prepublish -t npm",
     "version": "napi version"
+  },
+  "optionalDependencies": {
+    "@infras/native-win32-x64-msvc": "0.0.0",
+    "@infras/native-darwin-x64": "0.0.0",
+    "@infras/native-linux-x64-gnu": "0.0.0"
   }
 }
