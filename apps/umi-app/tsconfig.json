@@ -1,4 +1,5 @@
 {
+  "extends": "@infras/shared/configs/tsconfig.base.json",
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",

@@ -23,7 +23,8 @@
     "./utils": {
       "import": "./dist/utils/index.js",
       "require": "./dist/utils/index.cjs"
-    }
+    },
+    "./config": "./config"
   },
   "devDependencies": {
     "tsup": "^5.10.3"

@@ -1,5 +1,5 @@
 {
-  "extends": "../../configs/tsconfig.base.json",
+  "extends": "@infras/shared/configs/tsconfig.base.json",
   "compilerOptions": {
     "module": "esnext",
     "resolveJsonModule": true,
