@@ -1,5 +1,6 @@
 {
   "name": "@infras/rs-darwin-x64",
+  "private": true,
   "version": "0.0.0",
   "os": [
     "darwin"

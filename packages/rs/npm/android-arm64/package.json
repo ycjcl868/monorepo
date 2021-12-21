@@ -1,5 +1,6 @@
 {
   "name": "@infras/rs-android-arm64",
+  "private": true,
   "version": "0.0.0",
   "os": [
     "android"
