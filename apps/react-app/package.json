@@ -18,6 +18,11 @@
     "typescript": "^4.5.4",
     "web-vitals": "^2.1.2"
   },
+  "dependenciesMeta": {
+    "@infras/ui": {
+      "injected": true
+    }
+  },
   "scripts": {
     "start": "BROWSER=none react-scripts start",
     "build": "react-scripts build",

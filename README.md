@@ -8,6 +8,8 @@ Install dependencies
 
 ```bash
 $ npm i -g pnpm
+$ pnpm -v
+# should >= 6.20.0
 $ pnpm install
 ```
 

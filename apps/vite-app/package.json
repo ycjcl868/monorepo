@@ -13,6 +13,11 @@
     "@infras/ui": "workspace:*",
     "@infras/shared": "workspace:*"
   },
+  "dependenciesMeta": {
+    "@infras/ui": {
+      "injected": true
+    }
+  },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.0.0",
     "typescript": "^4.4.4",

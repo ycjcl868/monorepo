@@ -2,7 +2,6 @@
   "extends": "@infras/shared/configs/tsconfig.base.json",
   "compilerOptions": {
     "module": "esnext",
-    "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react"

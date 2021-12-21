@@ -28,8 +28,10 @@
     "dev": "rollup --config rollup.config.js --watch",
     "build": "rollup --config rollup.config.js",
     "prepare": "npm run build",
-    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.21"
   },
   "peerDependencies": {
     "react": "^16.0.0 || ^17.0.0",
@@ -38,6 +40,9 @@
   },
   "devDependencies": {
     "@infras/shared": "workspace:*",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "vue": "^3.0.0",
     "@babel/core": "^7.14.5",
     "@babel/node": "^7.14.5",
     "@babel/plugin-proposal-object-rest-spread": "^7.14.5",
