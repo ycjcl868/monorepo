@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "main": "index.js",
   "types": "index.d.ts",
+  "private": true,
   "napi": {
     "name": "rs",
     "triples": {
@@ -27,7 +28,6 @@
   "engines": {
     "node": ">= 10"
   },
-  "private": true,
   "scripts": {
     "postinstall": "npm run build",
     "artifacts": "napi artifacts",
