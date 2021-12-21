@@ -29,7 +29,7 @@
     "node": ">= 10"
   },
   "scripts": {
-    "postinstall": "npm run build",
+    "prepare": "npm run build",
     "artifacts": "napi artifacts",
     "build": "napi build --platform --release",
     "build:debug": "napi build --platform",

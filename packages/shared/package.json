@@ -4,7 +4,7 @@
   "private": true,
   "description": "An infrastructure monorepo shared library for all projects and apps.",
   "scripts": {
-    "postinstall": "npm run build",
+    "prepare": "npm run build",
     "dev": "tsup --watch",
     "build": "tsup",
     "prepublishOnly": "npm run build",
