@@ -1,5 +1,6 @@
 {
-  "extends": "@infras/shared/configs/tsconfig.base.json",
+  // maybe vite bug
+  "extends": "../../packages/shared/configs/tsconfig.base.json",
   "compilerOptions": {
     "target": "esnext",
     "useDefineForClassFields": true,
