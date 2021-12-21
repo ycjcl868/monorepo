@@ -1,16 +1,15 @@
 {
-  "name": "@infras/rs-freebsd-x64",
-  "private": true,
+  "name": "@infras/native-darwin-x64",
   "version": "0.0.0",
   "os": [
-    "freebsd"
+    "darwin"
   ],
   "cpu": [
     "x64"
   ],
-  "main": "rs.freebsd-x64.node",
+  "main": "native.darwin-x64.node",
   "files": [
-    "rs.freebsd-x64.node"
+    "native.darwin-x64.node"
   ],
   "license": "MIT",
   "engines": {

@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@infras/ui": "workspace:*",
-    "@infras/rs": "workspace:*",
+    "@infras/native": "workspace:*",
     "@infras/shared": "workspace:*"
   },
   "keywords": [],

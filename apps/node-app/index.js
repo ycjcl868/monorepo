@@ -1,5 +1,5 @@
 const { sum } = require('@infras/shared/utils');
-const { sum: rsSum } = require('@infras/rs');
+const { sum: rsSum } = require('@infras/native');
 
 console.time("Node.js time");
 console.log('Node.js \`sum(1, 1)\`:', sum(1, 1));

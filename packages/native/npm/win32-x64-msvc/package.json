@@ -1,16 +1,15 @@
 {
-  "name": "@infras/rs-win32-ia32-msvc",
-  "private": true,
+  "name": "@infras/native-win32-x64-msvc",
   "version": "0.0.0",
   "os": [
     "win32"
   ],
   "cpu": [
-    "ia32"
+    "x64"
   ],
-  "main": "rs.win32-ia32-msvc.node",
+  "main": "native.win32-x64-msvc.node",
   "files": [
-    "rs.win32-ia32-msvc.node"
+    "native.win32-x64-msvc.node"
   ],
   "license": "MIT",
   "engines": {

@@ -1,16 +1,15 @@
 {
-  "name": "@infras/rs-darwin-x64",
-  "private": true,
+  "name": "@infras/native-linux-x64-gnu",
   "version": "0.0.0",
   "os": [
-    "darwin"
+    "linux"
   ],
   "cpu": [
     "x64"
   ],
-  "main": "rs.darwin-x64.node",
+  "main": "native.linux-x64-gnu.node",
   "files": [
-    "rs.darwin-x64.node"
+    "native.linux-x64-gnu.node"
   ],
   "license": "MIT",
   "engines": {

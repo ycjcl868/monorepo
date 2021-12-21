@@ -40,11 +40,11 @@ importers:
 
   apps/node-app:
     specifiers:
-      '@infras/rs': workspace:*
+      '@infras/native': workspace:*
       '@infras/shared': workspace:*
       '@infras/ui': workspace:*
     dependencies:
-      '@infras/rs': link:../../packages/rs
+      '@infras/native': link:../../packages/native
       '@infras/shared': link:../../packages/shared
       '@infras/ui': link:../../packages/ui
 
@@ -132,49 +132,19 @@ importers:
       vite: 2.7.3
       vue-tsc: 0.29.8_typescript@4.5.4
 
-  packages/rs:
+  packages/native:
     specifiers:
       '@napi-rs/cli': ^2.0.0
     devDependencies:
       '@napi-rs/cli': 2.0.0
 
-  packages/rs/npm/android-arm-eabi:
+  packages/native/npm/darwin-x64:
     specifiers: {}
 
-  packages/rs/npm/android-arm64:
+  packages/native/npm/linux-x64-gnu:
     specifiers: {}
 
-  packages/rs/npm/darwin-arm64:
-    specifiers: {}
-
-  packages/rs/npm/darwin-x64:
-    specifiers: {}
-
-  packages/rs/npm/freebsd-x64:
-    specifiers: {}
-
-  packages/rs/npm/linux-arm-gnueabihf:
-    specifiers: {}
-
-  packages/rs/npm/linux-arm64-gnu:
-    specifiers: {}
-
-  packages/rs/npm/linux-arm64-musl:
-    specifiers: {}
-
-  packages/rs/npm/linux-x64-gnu:
-    specifiers: {}
-
-  packages/rs/npm/linux-x64-musl:
-    specifiers: {}
-
-  packages/rs/npm/win32-arm64-msvc:
-    specifiers: {}
-
-  packages/rs/npm/win32-ia32-msvc:
-    specifiers: {}
-
-  packages/rs/npm/win32-x64-msvc:
+  packages/native/npm/win32-x64-msvc:
     specifiers: {}
 
   packages/shared:
