@@ -1,5 +1,6 @@
 {
   "name": "@infras/native-linux-x64-gnu",
+  "private": true,
   "version": "0.0.0",
   "os": [
     "linux"

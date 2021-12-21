@@ -1,5 +1,6 @@
 {
   "name": "@infras/native-win32-x64-msvc",
+  "private": true,
   "version": "0.0.0",
   "os": [
     "win32"
