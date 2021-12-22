@@ -13,6 +13,9 @@ export default defineConfig([
     external: ['react', 'react-dom'],
     plugins: [
       typescript(),
+      resolve({
+        extensions: ['.tsx', '.ts', '.js']
+      }),
       postcss({}),
       babel({
         babelrc: false,
