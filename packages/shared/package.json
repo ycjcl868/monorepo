@@ -10,19 +10,18 @@
     "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "type": "module",
   "browser": {
     "./types": "./dist/types/index.js",
     "./utils": "./dist/utils/index.js"
   },
   "exports": {
     "./types": {
-      "import": "./dist/types/index.js",
-      "require": "./dist/types/index.cjs"
+      "import": "./dist/types/index.mjs",
+      "require": "./dist/types/index.js"
     },
     "./utils": {
-      "import": "./dist/utils/index.js",
-      "require": "./dist/utils/index.cjs"
+      "import": "./dist/utils/index.mjs",
+      "require": "./dist/utils/index.js"
     },
     "./config": "./config"
   },

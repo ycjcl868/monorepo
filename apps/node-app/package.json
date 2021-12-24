@@ -10,6 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
     "@infras/ui": "workspace:*",
     "@infras/native": "workspace:*",
     "@infras/shared": "workspace:*"

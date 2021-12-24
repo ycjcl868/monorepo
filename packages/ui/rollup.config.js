@@ -56,7 +56,7 @@ export default defineConfig([
       },
       {
         name,
-        file: './lib/react/index.js',
+        file: './lib/react/index.cjs',
         format: 'commonjs',
       }
     ]
@@ -108,7 +108,7 @@ export default defineConfig([
       },
       {
         name,
-        file: './lib/vue/index.js',
+        file: './lib/vue/index.cjs',
         format: 'commonjs',
       }
     ]

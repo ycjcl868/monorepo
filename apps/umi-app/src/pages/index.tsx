@@ -6,7 +6,7 @@ export default function IndexPage() {
   return (
     <div>
       <p>AppType.Web: {AppType.Web}</p>
-      <h1 className={styles.title}>Page index</h1>
+      <h1 className={styles.title}>Umi App</h1>
       <Component />
     </div>
   );

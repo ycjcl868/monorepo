@@ -6,7 +6,6 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
-  "type": "module",
   "browser": {
     "./react": "./dist/react/index.js",
     "./vue": "./dist/vue/index.js"
@@ -14,12 +13,12 @@
   "exports": {
     "./react": {
       "import": "./es/react/index.js",
-      "require": "./lib/react/index.js",
+      "require": "./lib/react/index.cjs",
       "default": "./dist/react/index.js"
     },
     "./vue": {
       "import": "./es/vue/index.js",
-      "require": "./lib/vue/index.js",
+      "require": "./lib/vue/index.cjs",
       "default": "./dist/vue/index.js"
     }
   },
@@ -56,6 +55,7 @@
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.1.1",
     "rollup": "^2.60.2",
+    "postcss": "^8.4.5",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-typescript2": "^0.31.1",
     "rollup-plugin-vue": "^6.0.0",

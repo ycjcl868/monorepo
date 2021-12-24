@@ -6,6 +6,7 @@ import { Component } from '@infras/ui/vue';
 </script>
 
 <template>
+  <h2>Vue Vite App</h2>
   <img alt="Vue logo" src="./assets/logo.png" />
   <p>AppType.Web: {{AppType.Web}}</p>
   <Component />
