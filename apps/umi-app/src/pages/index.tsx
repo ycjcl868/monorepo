@@ -1,6 +1,6 @@
 import styles from './index.less';
 import { AppType } from '@infras/shared/types';
-import { Component } from '@infras/ui';
+import { Component } from '@infras/ui/react';
 
 export default function IndexPage() {
   return (
