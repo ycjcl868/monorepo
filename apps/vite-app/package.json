@@ -6,6 +6,7 @@
     "dev": "vite",
     "start": "vite",
     "build": "vue-tsc --noEmit && vite build",
+    "test": "npm run build",
     "preview": "vite preview"
   },
   "dependencies": {

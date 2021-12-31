@@ -204,6 +204,7 @@ importers:
       '@rollup/plugin-babel': ^5.3.0
       '@rollup/plugin-commonjs': ^21.0.1
       '@rollup/plugin-node-resolve': ^13.1.1
+      '@vue/compiler-sfc': ^3.2.26
       lodash-es: ^4.17.21
       postcss: ^8.4.5
       react: ^16.0.0
@@ -231,13 +232,14 @@ importers:
       '@rollup/plugin-babel': 5.3.0_@babel+core@7.16.5+rollup@2.61.1
       '@rollup/plugin-commonjs': 21.0.1_rollup@2.61.1
       '@rollup/plugin-node-resolve': 13.1.1_rollup@2.61.1
+      '@vue/compiler-sfc': 3.2.26
       postcss: 8.4.5
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
       rollup: 2.61.1
       rollup-plugin-postcss: 4.0.2_postcss@8.4.5
       rollup-plugin-typescript2: 0.31.1_rollup@2.61.1+typescript@4.5.4
-      rollup-plugin-vue: 6.0.0
+      rollup-plugin-vue: 6.0.0_@vue+compiler-sfc@3.2.26
       tslib: 2.3.1
       typescript: 4.5.4
       vue: 3.2.26
@@ -14672,11 +14674,12 @@ packages:
       - ts-toolbelt
     dev: true
 
-  /rollup-plugin-vue/6.0.0:
+  /rollup-plugin-vue/6.0.0_@vue+compiler-sfc@3.2.26:
     resolution: {integrity: sha512-oVvUd84d5u73M2HYM3XsMDLtZRIA/tw2U0dmHlXU2UWP5JARYHzh/U9vcxaN/x/9MrepY7VH3pHFeOhrWpxs/Q==}
     peerDependencies:
       '@vue/compiler-sfc': '*'
     dependencies:
+      '@vue/compiler-sfc': 3.2.26
       debug: 4.3.3
       hash-sum: 2.0.0
       rollup-pluginutils: 2.8.2

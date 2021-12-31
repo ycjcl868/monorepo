@@ -2,10 +2,11 @@
   "private": true,
   "name": "umi-app",
   "scripts": {
-    "start": "PORT=3000 umi dev",
+    "start": "npm run dev",
+    "dev": "PORT=3000 umi dev",
     "build": "umi build",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
-    "test": "umi-test",
+    "test": "npm run build",
     "test:coverage": "umi-test --coverage"
   },
   "gitHooks": {
