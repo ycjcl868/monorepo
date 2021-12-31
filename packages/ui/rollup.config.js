@@ -1,7 +1,7 @@
 import { defineConfig } from 'rollup';
 import commonjs from '@rollup/plugin-commonjs';
 import postcss from 'rollup-plugin-postcss'
-import resolve from '@rollup/plugin-node-resolve';
+import { nodeResolve as resolve } from '@rollup/plugin-node-resolve';
 import typescript from 'rollup-plugin-typescript2';
 import vue from 'rollup-plugin-vue';
 import { babel } from '@rollup/plugin-babel';
@@ -65,12 +65,13 @@ export default defineConfig([
     input: 'vue/index.ts',
     external: ['vue'],
     plugins: [
+      vue(),
       typescript(),
       resolve({
         extensions: ['.ts', '.js', '.vue'],
       }),
       postcss({}),
-      vue(),
+      commonjs(),
       babel({
         presets: ['@babel/preset-env'],
         plugins: [
@@ -90,15 +91,15 @@ export default defineConfig([
         babelrc: false,
         extensions: ['.js', '.ts', '.tsx', '.jsx', '.es6', '.es', '.mjs', '.vue'],
       }),
-      commonjs(),
     ],
     output: [
       {
         name,
         file: './dist/vue/index.js',
         format: 'umd',
+        exports: 'named',
         globals: {
-          vue: 'vue',
+          vue: 'Vue',
         }
       },
       {
