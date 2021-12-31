@@ -4,6 +4,7 @@
     "turbo": "^1.0.23"
   },
   "turbo": {
+    "npmClient": "pnpm",
     "pipeline": {
       "build": {
         "dependsOn": [
