@@ -6,7 +6,6 @@
     "dev": "PORT=3000 umi dev",
     "build": "umi build",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
-    "test": "npm run build",
     "test:coverage": "umi-test --coverage"
   },
   "gitHooks": {

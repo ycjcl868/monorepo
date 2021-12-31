@@ -26,7 +26,6 @@
   "scripts": {
     "start": "BROWSER=none react-scripts start",
     "build": "react-scripts build",
-    "test": "npm run build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

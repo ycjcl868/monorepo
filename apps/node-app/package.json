@@ -6,8 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js && node index.mjs",
-    "dev": "node index.js  && node index.mjs",
-    "test": "npm run build"
+    "dev": "node index.js  && node index.mjs"
   },
   "dependencies": {
     "react": "^16.0.0",

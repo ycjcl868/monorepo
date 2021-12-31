@@ -6,8 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "deno run index.ts",
-    "dev": "deno run index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "deno run index.ts"
   },
   "dependencies": {
     "@infras/ui": "workspace:*",
