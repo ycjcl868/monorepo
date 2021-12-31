@@ -1,0 +1,26 @@
+{
+  "name": "express-app",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependenciesMeta": {
+    "@infras/ui": {
+      "injected": true
+    }
+  },
+  "dependencies": {
+    "@infras/ui": "workspace:*",
+    "@infras/native": "workspace:*",
+    "@infras/shared": "workspace:*",
+    "express": "^4.17.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
