@@ -4,10 +4,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "vercel-build": "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --default-toolchain stable && export PATH=\"$HOME/.cargo/bin:$PATH\" && source ~/.profile && cd ../..  && npm i pnpm -g && pnpm install --no-frozen-lockfile --unsafe-perm",
-    "start": "node index.js"
-  },
   "dependenciesMeta": {
     "@infras/ui": {
       "injected": true
