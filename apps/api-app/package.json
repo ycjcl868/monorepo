@@ -9,6 +9,9 @@
       "injected": true
     }
   },
+  "scripts": {
+    "build": "echo 1"
+  },
   "dependencies": {
     "@infras/ui": "workspace:*",
     "@infras/native": "workspace:*",
