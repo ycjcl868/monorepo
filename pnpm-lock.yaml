@@ -13,14 +13,21 @@ importers:
       '@infras/native': workspace:*
       '@infras/shared': workspace:*
       '@infras/ui': workspace:*
+      cross-env: ^7.0.3
+      express: ^4.17.1
+      next: 12.0.7
       react: ^17.0.2
       react-dom: ^17.0.2
     dependencies:
       '@infras/native': link:../../packages/native
       '@infras/shared': link:../../packages/shared
       '@infras/ui': file:packages/ui_react-dom@17.0.2+react@17.0.2
+      express: 4.17.1
+      next: 12.0.7_react-dom@17.0.2+react@17.0.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
+    devDependencies:
+      cross-env: 7.0.3
     dependenciesMeta:
       '@infras/ui':
         injected: true
@@ -5861,6 +5868,14 @@ packages:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
+    dev: true
+
+  /cross-env/7.0.3:
+    resolution: {integrity: sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==}
+    engines: {node: '>=10.14', npm: '>=6', yarn: '>=1'}
+    hasBin: true
+    dependencies:
+      cross-spawn: 7.0.3
     dev: true
 
   /cross-spawn/5.1.0:
