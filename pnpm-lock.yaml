@@ -182,9 +182,9 @@ importers:
 
   packages/native:
     specifiers:
-      '@napi-rs/cli': ^2.0.0
+      '@napi-rs/cli': ^2.2.0
     devDependencies:
-      '@napi-rs/cli': 2.0.0
+      '@napi-rs/cli': 2.2.0
 
   packages/native/npm/darwin-x64:
     specifiers: {}
@@ -2428,8 +2428,8 @@ packages:
       chalk: 4.1.2
     dev: false
 
-  /@napi-rs/cli/2.0.0:
-    resolution: {integrity: sha512-2R24dtZoPYb9TxIQJbhUSloSVK4HGfa6CVn5JgUeO9WTvZecC5i8WaFm2CC7GWbYmDlPu2AnULwaSr+AP7r1RQ==}
+  /@napi-rs/cli/2.2.0:
+    resolution: {integrity: sha512-lXOKq0EZWztzHIlpXhKG0Nrv/PDZAl/yBsqQTG0aDfdjGCJudtPgWLR7zzaJoYzkkdFJo0r+teYYzgC+cXB4KQ==}
     engines: {node: '>= 10'}
     hasBin: true
     dev: true
