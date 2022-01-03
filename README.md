@@ -1,6 +1,6 @@
 # Monorepo
 
-Module package design practice in Monorepo.
+Module package design practice in Monorepo with pnpm and turbo.
 
 ## Quick Start
 
