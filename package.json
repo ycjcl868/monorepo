@@ -17,6 +17,9 @@
           ".next/**"
         ]
       },
+      "deploy": {
+        "dependsOn": ["build"]
+      },
       "dev": {
         "cache": false
       }
