@@ -49,7 +49,7 @@ $ pnpm start --filter "node-app"
 
 ![](https://user-images.githubusercontent.com/13595509/146680754-8b6798f4-fa4f-43ff-929e-911e1343ef88.png)
 
-## Development
+## Packages Development
 
 ### packages/shared
 
@@ -61,4 +61,10 @@ $ pnpm dev --filter "@infras/shared"
 
 ```bash
 $ pnpm dev --filter "@infras/ui"
+```
+
+### packages/native
+
+```bash
+$ pnpm build --filter "@infras/native"
 ```
