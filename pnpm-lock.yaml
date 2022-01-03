@@ -8,7 +8,7 @@ importers:
     devDependencies:
       turbo: 1.0.23
 
-  apps/api-app:
+  apps/express-app:
     specifiers:
       '@infras/native': workspace:*
       '@infras/shared': workspace:*

@@ -1,10 +1,8 @@
 module.exports = {
-  webpack: (config, { isServer, webpack }) => {
-    if (isServer) {
-      config.plugins.push(
-        new webpack.IgnorePlugin({ resourceRegExp: /\.node/ })
-      );
-    }
+  webpack: (config) => {
+    config.externals.push({
+      '@infras/native': "commonjs @infras/native",
+    });
     return config;
   }
 }
