@@ -1,7 +1,7 @@
 use napi_derive::napi;
 
 #[napi]
-fn sum(a: i32, b: i32) -> i32 {
+fn sum(a: f64, b: f64) -> f64 {
   a + b
 }
 
