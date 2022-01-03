@@ -9,7 +9,7 @@ const fetcher = (url) =>
 export default () => {
   const [a, setA] = useState<number>(1)
   const [b, setB] = useState<number>(1)
-  const { data } = useSWR(`/api/sum?a=${a}&b=${b}`, fetcher)
+  const { data, error } = useSWR(`/api/sum?a=${a}&b=${b}`, fetcher)
 
   return (
     <div>
@@ -26,8 +26,15 @@ export default () => {
       />{' '}
       ={' '}
       <div style={{ display: 'inline-block', verticalAlign: 'middle' }}>
-        <div>Node.js: {data?.node || 0}</div>
-        <div>Rust: {data?.rust || 0}</div>
+        {error && <div>failed to load</div>}
+        {!data ? (
+          <div>loading...</div>
+        ) : (
+          <>
+            <div>Node.js: {data?.node || 0}</div>
+            <div>Rust: {data?.rust || 0}</div>
+          </>
+        )}
       </div>
     </div>
   )
