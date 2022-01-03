@@ -19,6 +19,9 @@ Preview:
 - [Next.js App](https://monorepo-next-app.vercel.app/)
 - [CRA](https://monorepo-react-app.vercel.app/)
 - [Umi App](https://monorepo-umi-app.vercel.app/)
+- [Express App](https://monorepo-express-app.vercel.app/)
+- [Vite Vue 3 App](https://monorepo-vite-vue3-app.vercel.app/)
+- [Vite React App](https://monorepo-vite-react-app.vercel.app/)
 
 ### React App
 

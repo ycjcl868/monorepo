@@ -1,7 +1,8 @@
 {
   "private": true,
   "devDependencies": {
-    "turbo": "^1.0.23"
+    "turbo": "^1.0.23",
+    "prettier": "^2.5.1"
   },
   "turbo": {
     "npmClient": "pnpm",
