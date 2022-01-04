@@ -1,6 +1,6 @@
 # Monorepo
 
-Better practice npm Package Design in Monorepo with pnpm and turbo.
+Better practice npm Package Design in Monorepo with [pnpm](https://pnpm.io/) and [turborepo](https://turborepo.org/), deploying into [Vercel](https://vercel.com/).
 
 ## Quick Start
 
