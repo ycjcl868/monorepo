@@ -1,5 +1,8 @@
 {
   "private": true,
+  "scripts": {
+    "build:pkg": "pnpm run prepare -r"
+  },
   "devDependencies": {
     "turbo": "^1.0.23",
     "prettier": "^2.5.1"
