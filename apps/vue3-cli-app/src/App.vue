@@ -1,21 +1,25 @@
 <template>
-  <div id="app">
+  <div>
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-     <p>AppType.Web: {{AppType.Web}}</p>
+    <h2>Vue cli 3 </h2>
+    <p>AppType.Web: {{AppType.Web}}</p>
+    <SharedComponent />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import { AppType } from '@infras/shared/types';
-// import { Component } from '@infras/ui/vue';
+import { SharedComponent } from '@infras/ui/vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    // Component,
+    SharedComponent
+  },
+  data() {
+    return {
+      AppType
+    }
   }
 }
 </script>

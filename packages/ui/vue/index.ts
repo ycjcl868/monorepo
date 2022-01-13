@@ -1,1 +1,1 @@
-export { default as Component } from './Component.vue';
+export { default as SharedComponent } from './SharedComponent.vue'

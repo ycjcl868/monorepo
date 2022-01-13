@@ -1,5 +1,5 @@
 {
-  "name": "vue2-cli-app",
+  "name": "vue3-cli-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,25 +8,25 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "@infras/ui": "workspace:*",
+    "@infras/shared": "workspace:*",
+    "vue": "^3.0.0"
+  },
   "dependenciesMeta": {
     "@infras/ui": {
       "injected": true
     }
   },
-  "dependencies": {
-    "core-js": "^3.6.5",
-    "@infras/ui": "workspace:*",
-    "@infras/shared": "workspace:*",
-    "vue": "^2.6.11"
-  },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+    "eslint-plugin-vue": "^7.0.0"
   },
   "eslintConfig": {
     "root": true,
@@ -34,7 +34,7 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/essential",
+      "plugin:vue/vue3-essential",
       "eslint:recommended"
     ],
     "parserOptions": {

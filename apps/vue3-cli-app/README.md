@@ -1,4 +1,4 @@
-# vue2-cli-app
+# vue3-cli-app
 
 ## Project setup
 ```
