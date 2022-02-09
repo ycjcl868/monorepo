@@ -4,8 +4,13 @@
     "build:pkg": "pnpm run prepare -r"
   },
   "devDependencies": {
-    "turbo": "^1.0.23",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "turbo": "^1.1.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "@remix-run/dev@1>esbuild": "0.14.21"
+    }
   },
   "turbo": {
     "npmClient": "pnpm",
@@ -21,7 +26,9 @@
         ]
       },
       "deploy": {
-        "dependsOn": ["build"]
+        "dependsOn": [
+          "build"
+        ]
       },
       "dev": {
         "cache": false
