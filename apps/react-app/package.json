@@ -5,18 +5,23 @@
   "dependencies": {
     "@infras/ui": "workspace:*",
     "@infras/shared": "workspace:*",
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "web-vitals": "^2.1.2"
+  },
+  "devDependencies": {
+    "windicss": "^3.5.1",
+    "windicss-webpack-plugin": "^1.7.2",
     "@types/jest": "^27.0.3",
     "@types/node": "^16.11.14",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "5.0.0",
+    "@craco/craco": "^6.4.3",
+    "react-scripts": "^5.0.0",
     "typescript": "^4.5.4",
-    "web-vitals": "^2.1.2"
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0"
   },
   "dependenciesMeta": {
     "@infras/ui": {
@@ -24,9 +29,9 @@
     }
   },
   "scripts": {
-    "start": "BROWSER=none react-scripts start",
-    "build": "react-scripts build",
-    "eject": "react-scripts eject"
+    "start": "BROWSER=none craco start",
+    "build": "craco build",
+    "eject": "craco eject"
   },
   "eslintConfig": {
     "extends": [
