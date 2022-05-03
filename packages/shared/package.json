@@ -21,10 +21,16 @@
       "import": "./dist/utils/index.mjs",
       "require": "./dist/utils/index.js"
     },
-    "./config": "./config"
+    "./configs/*.json": "./configs/*.json",
+    "./configs/*": {
+      "require": "./dist/configs/*.js",
+      "import": "./dist/configs/*.mjs",
+      "types": "./dist/configs/*.d.ts"
+    }
   },
   "devDependencies": {
-    "tsup": "^5.11.11"
+    "tsup": "^5.12.1",
+    "windicss": "^3.5.1"
   },
   "keywords": ["shared", "utils", "types"],
   "author": "ycjcl868",
