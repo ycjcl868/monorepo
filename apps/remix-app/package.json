@@ -4,10 +4,10 @@
   "description": "",
   "license": "",
   "scripts": {
-    "build": "remix build",
+    "build": "npm run prebuild && remix build",
     "dev": "remix dev",
     "start": "remix dev",
-    "postinstall": "remix setup node"
+    "prebuild": "remix setup node"
   },
   "dependencies": {
     "@infras/shared": "workspace:*",
