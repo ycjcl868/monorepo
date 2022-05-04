@@ -6,7 +6,7 @@ import logo from './logo.svg'
 function App() {
   return (
     <div className='text-center'>
-      <header className='bg-[#282c34] min-h-screen flex flex-col items-center justify-center text-[#fff] text-size-[calc(10px_+_2vmin)]'>
+      <header className='bg-[#282c34] min-h-screen flex flex-col items-center justify-center text-[#fff] text-xl'>
         <h2>Create React App</h2>
         <img
           src={logo}
