@@ -16,13 +16,13 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "next": "12.0.7",
+    "next": "^12.1.6",
     "swr": "^1.1.2",
     "@infras/ui": "workspace:*",
     "@infras/native": "workspace:*",
     "@infras/shared": "workspace:*",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
