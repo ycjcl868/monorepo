@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { startTransition, useState } from 'react'
 import useSWR from 'swr'
 
 const fetcher = (url) =>
@@ -17,13 +17,21 @@ export default () => {
       <input
         type='number'
         defaultValue={a}
-        onChange={(e) => setA(+e.target.value)}
+        onChange={(e) => {
+          startTransition(() => {
+            setA(+e.target.value)
+          })
+        }}
       />{' '}
       +
       <input
         type='number'
         defaultValue={b}
-        onChange={(e) => setB(+e.target.value)}
+        onChange={(e) => {
+          startTransition(() => {
+            setB(+e.target.value)
+          })
+        }}
       />{' '}
       ={' '}
       <div style={{ display: 'inline-block', verticalAlign: 'middle' }}>

@@ -15,6 +15,8 @@ importers:
       '@infras/native': workspace:*
       '@infras/shared': workspace:*
       '@infras/ui': workspace:*
+      '@types/react': ^18.0.9
+      '@types/react-dom': ^18.0.5
       cross-env: ^7.0.3
       express: ^4.17.1
       next: ^12.1.6
@@ -32,6 +34,8 @@ importers:
       react-dom: 18.1.0_react@18.1.0
       swr: 1.2.2_react@18.1.0
     devDependencies:
+      '@types/react': 18.0.9
+      '@types/react-dom': 18.0.5
       cross-env: 7.0.3
       nodemon: 2.0.15
     dependenciesMeta:
@@ -274,9 +278,9 @@ importers:
 
   packages/native:
     specifiers:
-      '@napi-rs/cli': ^2.4.2
+      '@napi-rs/cli': ^2.9.0
     devDependencies:
-      '@napi-rs/cli': 2.4.5
+      '@napi-rs/cli': 2.9.0
 
   packages/native/npm/darwin-x64:
     specifiers: {}
@@ -2864,8 +2868,8 @@ packages:
       glob-to-regexp: 0.3.0
     dev: true
 
-  /@napi-rs/cli/2.4.5:
-    resolution: {integrity: sha512-CLa3PSHh4Y760OXkHidzfHavVtfbQyfMhj3sWpta3SZjbWMk0tbdPhRez9y8KVApVVWjBxz5agEeFMfxxr+KTg==}
+  /@napi-rs/cli/2.9.0:
+    resolution: {integrity: sha512-qZ49ORZJ8rsHlvnnLsJCg9Ik+KfhiIgSea1HDMf6A9KBVxwWCijNhSO8zFvvBr7m1m44cx9WWhnQDnwPqSDeLA==}
     engines: {node: '>= 10'}
     hasBin: true
     dev: true
@@ -3917,6 +3921,12 @@ packages:
       '@types/react': 17.0.41
     dev: true
 
+  /@types/react-dom/18.0.5:
+    resolution: {integrity: sha512-OWPWTUrY/NIrjsAPkAk1wW9LZeIjSvkXRhclsFO8CZcZGCOg2G0YZy4ft+rOyYxy8B7ui5iZzi9OkDebZ7/QSA==}
+    dependencies:
+      '@types/react': 18.0.9
+    dev: true
+
   /@types/react-helmet/6.1.5:
     resolution: {integrity: sha512-/ICuy7OHZxR0YCAZLNg9r7I9aijWUWvxaPR6uTuyxe8tAj5RL4Sw1+R6NhXUtOsarkGYPmaHdBDvuXh2DIN/uA==}
     dependencies:
@@ -3983,6 +3993,14 @@ packages:
       '@types/prop-types': 15.7.4
       '@types/scheduler': 0.16.2
       csstype: 3.0.11
+
+  /@types/react/18.0.9:
+    resolution: {integrity: sha512-9bjbg1hJHUm4De19L1cHiW0Jvx3geel6Qczhjd0qY5VKVE2X5+x77YxAepuCwVh4vrgZJdgEJw48zrhRIeF4Nw==}
+    dependencies:
+      '@types/prop-types': 15.7.4
+      '@types/scheduler': 0.16.2
+      csstype: 3.0.11
+    dev: true
 
   /@types/resolve/1.17.1:
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
