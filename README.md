@@ -24,6 +24,7 @@ Preview:
 - [Vite React App](https://monorepo-vite-react-app.vercel.app/)
 - [Vue 3 Cli App](https://monorepo-vue3-cli-app.vercel.app/)
 - [Remix App](https://monorepo-remix-app.vercel.app/)
+- [Dumi App](https://monorepo-dumi-app.vercel.app/)
 
 ### React App
 
@@ -50,6 +51,15 @@ $ pnpm start --filter "node-app"
 ```
 
 ![](https://user-images.githubusercontent.com/13595509/146680754-8b6798f4-fa4f-43ff-929e-911e1343ef88.png)
+
+#### Dumi App
+
+```bash
+# using `...` will run `start` script of dumi-app and all of its dependencies:
+$ pnpm run start --parallel --filter "dumi-app..."
+```
+
+![](https://user-images.githubusercontent.com/13595509/170510753-df4a6016-46b2-4252-9722-b765261c1a19.gif)
 
 ## Packages Development
 
