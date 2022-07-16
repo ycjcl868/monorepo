@@ -30,7 +30,7 @@ Preview:
 
 ```bash
 # Start React App
-$ pnpm start --filter "react-app"
+$ pnpm --filter "react-app" start
 ```
 
 ![](https://user-images.githubusercontent.com/13595509/146680807-a15b411e-075a-438e-b020-f3d88240c55d.png)
@@ -47,7 +47,7 @@ $ pnpm start --filter "vite-app"
 #### Node.js App
 
 ```bash
-$ pnpm start --filter "node-app"
+$ pnpm --filter "node-app" start
 ```
 
 ![](https://user-images.githubusercontent.com/13595509/146680754-8b6798f4-fa4f-43ff-929e-911e1343ef88.png)
@@ -56,7 +56,7 @@ $ pnpm start --filter "node-app"
 
 ```bash
 # using `...` will run `start` script of dumi-app and all of its dependencies:
-$ pnpm run start --parallel --filter "dumi-app..."
+$ pnpm --filter "dumi-app..." --parallel start
 ```
 
 ![](https://user-images.githubusercontent.com/13595509/170510753-df4a6016-46b2-4252-9722-b765261c1a19.gif)
@@ -66,17 +66,17 @@ $ pnpm run start --parallel --filter "dumi-app..."
 ### packages/shared
 
 ```bash
-$ pnpm dev --filter "@infras/shared"
+$ pnpm --filter "@infras/shared" dev
 ```
 
 ### packages/ui
 
 ```bash
-$ pnpm dev --filter "@infras/ui"
+$ pnpm --filter "@infras/ui" dev
 ```
 
 ### packages/native
 
 ```bash
-$ pnpm build --filter "@infras/native"
+$ pnpm --filter "@infras/native" build
 ```
