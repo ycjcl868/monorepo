@@ -23,7 +23,7 @@ Preview:
 - [Vite Vue 3 App](https://monorepo-vite-vue3-app.vercel.app/)
 - [Vite React App](https://monorepo-vite-react-app.vercel.app/)
 - [Vue 3 Cli App](https://monorepo-vue3-cli-app.vercel.app/)
-- [Remix App](https://monorepo-remix-app.vercel.app/)
+- [Remix App](https://remix-app-remix-monorepo.vercel.app/)
 - [Dumi App](https://monorepo-dumi-app.vercel.app/)
 
 ### React App
