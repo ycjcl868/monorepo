@@ -4,12 +4,18 @@
 
 ## Quick Start
 
-Install dependencies
+Preinstall
 
 ```bash
 $ npm i -g pnpm
-$ pnpm -v
-# should >= 6.20.0
+$ pnpm -v # should >= 6.20.0
+# Install Rust and Cargo
+$ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+Install dependencies
+
+```bash
 $ pnpm install
 ```
 
