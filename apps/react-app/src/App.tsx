@@ -1,15 +1,14 @@
 import { AppType } from '@infras/shared/types'
 import { sum } from '@infras/shared/utils'
 import { Component } from '@infras/ui/react'
-import logo from './logo.svg'
+import Logo from './logo.svg'
 
 function App() {
   return (
     <div className='text-center'>
       <header className='bg-[#282c34] min-h-screen flex flex-col items-center justify-center text-[#fff] text-xl'>
         <h2>Create React App</h2>
-        <img
-          src={logo}
+        <Logo
           className='h-[40vmin] pointer-events-none animate-spin-slow'
           alt='logo'
         />
