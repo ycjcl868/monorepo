@@ -1,5 +1,4 @@
 const CopyPlugin = require('copy-webpack-plugin')
-const WindiCSSWebpackPlugin = require('windicss-webpack-plugin')
 /*
  * @type {import('@rspack/cli').Configuration}
  */
