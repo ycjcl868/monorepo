@@ -9,7 +9,9 @@
   },
   "devDependencies": {
     "prettier": "^2.5.1",
-    "turbo": "^1.1.2"
+    "turbo": "^1.1.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0"
   },
   "turbo": {
     "npmClient": "pnpm",
