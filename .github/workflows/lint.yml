@@ -17,15 +17,11 @@ jobs:
           PATTERNS: |
             **/*.+(ts|tsx|jsx|js)
             packages/eslint/**/*
-          FILES: |
-            pnpm-lock.yaml
-            .eslintrc
-            .eslintrc.json
-            .eslintrc.js
+      - run: echo ${{ env.GIT_DIFF }}
       - run: pnpm install --no-frozen-lockfile
         if: env.GIT_DIFF
       - name: Eslint Checker
-        if: env.GIT_DIFF && !env.MATCHED_FILES
+        if: env.GIT_DIFF
         run: |
           echo "::set-output name=修复命令::npx eslint --no-error-on-unmatched-pattern --fix --quiet ${{ env.GIT_DIFF_FILTERED }}"
           pnpm eslint --no-error-on-unmatched-pattern --quiet ${{ env.GIT_DIFF_FILTERED }}
