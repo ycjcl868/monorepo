@@ -22,7 +22,7 @@ jobs:
             .eslintrc
             .eslintrc.json
             .eslintrc.js
-      - run: pnpm install
+      - run: pnpm install --no-frozen-lockfile
         if: env.GIT_DIFF
       - name: Eslint Checker
         if: env.GIT_DIFF && !env.MATCHED_FILES
