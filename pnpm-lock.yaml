@@ -1105,7 +1105,7 @@ packages:
       '@babel/compat-data': 7.17.7
       '@babel/core': 7.12.3
       '@babel/helper-validator-option': 7.16.7
-      browserslist: 4.20.2
+      browserslist: 4.21.5
       semver: 6.3.0
     dev: true
 
@@ -1118,7 +1118,7 @@ packages:
       '@babel/compat-data': 7.17.7
       '@babel/core': 7.17.8
       '@babel/helper-validator-option': 7.16.7
-      browserslist: 4.20.2
+      browserslist: 4.21.5
       semver: 6.3.0
     dev: true
 
@@ -1131,7 +1131,7 @@ packages:
       '@babel/compat-data': 7.17.7
       '@babel/core': 7.18.6
       '@babel/helper-validator-option': 7.16.7
-      browserslist: 4.20.2
+      browserslist: 4.21.5
       semver: 6.3.0
     dev: true
 
@@ -7801,7 +7801,7 @@ packages:
       error-stack-parser: 2.0.7
       find-up: 5.0.0
       html-entities: 2.3.2
-      loader-utils: 2.0.2
+      loader-utils: 2.0.4
       react-refresh: 0.14.0
       schema-utils: 3.1.1
       source-map: 0.7.3
@@ -13459,17 +13459,6 @@ packages:
       picocolors: 1.0.0
     dev: true
 
-  /browserslist@4.21.2:
-    resolution: {integrity: sha512-MonuOgAtUB46uP5CezYbRaYKBNt2LxP0yX+Pmj4LkcDFGkn9Cbpi83d9sCjwQDErXsIJSzY5oKGDbgOlF/LPAA==}
-    engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
-    hasBin: true
-    dependencies:
-      caniuse-lite: 1.0.30001367
-      electron-to-chromium: 1.4.191
-      node-releases: 2.0.6
-      update-browserslist-db: 1.0.4(browserslist@4.21.2)
-    dev: true
-
   /browserslist@4.21.5:
     resolution: {integrity: sha512-tUkiguQGW7S3IhB7N+c2MV/HZPSCPAAiYBZXLsBhFB/PCy6ZKKsZrmBayHV9fdGV/ARIfJ14NkxKzRDjvp7L6w==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
@@ -14393,7 +14382,7 @@ packages:
     engines: {node: '>=6'}
     dependencies:
       dot-prop: 4.2.1
-      graceful-fs: 4.2.9
+      graceful-fs: 4.2.10
       make-dir: 1.3.0
       unique-string: 1.0.0
       write-file-atomic: 2.4.1
@@ -14713,7 +14702,7 @@ packages:
   /core-js-compat@3.21.1:
     resolution: {integrity: sha512-gbgX5AUvMb8gwxC7FLVWYT7Kkgu/y7+h/h1X43yJkNqhlK2fuYyQimqvKGNZFAY6CKii/GFKJ2cp/1/42TN36g==}
     dependencies:
-      browserslist: 4.20.2
+      browserslist: 4.21.5
       semver: 7.0.0
     dev: true
 
@@ -15991,10 +15980,6 @@ packages:
     resolution: {integrity: sha512-oi3YPmaP87hiHn0c4ePB67tXaF+ldGhxvZnT19tW9zX6/Ej+pLN0Afja5rQ6S+TND7I9EuwQTT8JYn1k7R7rrw==}
     dev: true
 
-  /electron-to-chromium@1.4.191:
-    resolution: {integrity: sha512-MeEaiuoSFh4G+rrN+Ilm1KJr8pTTZloeLurcZ+PRcthvdK1gWThje+E6baL7/7LoNctrzCncavAG/j/vpES9jg==}
-    dev: true
-
   /electron-to-chromium@1.4.333:
     resolution: {integrity: sha512-YyE8+GKyGtPEP1/kpvqsdhD6rA/TP1DUFDN4uiU/YI52NzDxmwHkEb3qjId8hLBa5siJvG0sfC3O66501jMruQ==}
     dev: true
@@ -16059,7 +16044,7 @@ packages:
     resolution: {integrity: sha512-Nv9m36S/vxpsI+Hc4/ZGRs0n9mXqSWGGq49zxb/cJfPAQMbUtttJAlNPS4AQzaBdw/pKskw5bMbekT/Y7W/Wlg==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      graceful-fs: 4.2.9
+      graceful-fs: 4.2.10
       memory-fs: 0.5.0
       tapable: 1.1.3
     dev: true
@@ -18973,7 +18958,7 @@ packages:
     resolution: {integrity: sha1-C3gV/DIBxqaeFNuYzgmMFpNSWes=}
     engines: {node: '>= 0.10'}
     dependencies:
-      graceful-fs: 4.2.9
+      graceful-fs: 4.2.10
       through2: 2.0.5
     dev: true
 
@@ -22253,7 +22238,7 @@ packages:
     resolution: {integrity: sha512-gUD/epcRms75Cw8RT1pUdHugZYM5ce64ucs2GEISABwkRsOQr0q2wm/MV2TKThycIe5e0ytRweW2RZxclogCdQ==}
     engines: {node: '>=8'}
     dependencies:
-      graceful-fs: 4.2.9
+      graceful-fs: 4.2.10
       parse-json: 5.2.0
       strip-bom: 4.0.0
       type-fest: 0.6.0
@@ -23935,10 +23920,6 @@ packages:
 
   /node-releases@2.0.4:
     resolution: {integrity: sha512-gbMzqQtTtDz/00jQzZ21PQzdI9PyLYqUSvD0p3naOhX4odFji0ZxYdnVwPTxmSwkmxhcFImpozceidSG+AgoPQ==}
-    dev: true
-
-  /node-releases@2.0.6:
-    resolution: {integrity: sha512-PiVXnNuFm5+iYkLBNeq5211hvO38y63T0i2KKh2KnUs3RpzJ+JtODFjkD8yjLwnDkTYF1eKXheUwdssR+NRZdg==}
     dev: true
 
   /nodemon@2.0.15:
@@ -26346,7 +26327,7 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       autoprefixer: 9.8.8
-      browserslist: 4.21.2
+      browserslist: 4.21.5
       caniuse-lite: 1.0.30001367
       css-blank-pseudo: 0.1.4
       css-has-pseudo: 0.10.0
@@ -30841,7 +30822,7 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
-      acorn: 8.7.0
+      acorn: 8.8.2
       commander: 2.20.3
       source-map: 0.7.3
       source-map-support: 0.5.21
@@ -31951,17 +31932,6 @@ packages:
       picocolors: 1.0.0
     dev: true
 
-  /update-browserslist-db@1.0.4(browserslist@4.21.2):
-    resolution: {integrity: sha512-jnmO2BEGUjsMOe/Fg9u0oczOe/ppIDZPebzccl1yDWGLFP16Pa1/RM5wEoKYPG2zstNcDuAStejyxsOuKINdGA==}
-    hasBin: true
-    peerDependencies:
-      browserslist: '>= 4.21.0'
-    dependencies:
-      browserslist: 4.21.2
-      escalade: 3.1.1
-      picocolors: 1.0.0
-    dev: true
-
   /update-notifier@3.0.0:
     resolution: {integrity: sha512-6Xe3oF2bvuoj4YECUc52yxVs94yWrxwqHbzyveDktTS1WhnlTRpNcQMxUshcB7nRVGi1jEXiqL5cW1S5WSyzKg==}
     engines: {node: '>=8'}
@@ -32304,7 +32274,7 @@ packages:
     dependencies:
       append-buffer: 1.0.2
       convert-source-map: 1.8.0
-      graceful-fs: 4.2.9
+      graceful-fs: 4.2.10
       normalize-path: 2.1.1
       now-and-later: 2.0.1
       remove-bom-buffer: 3.0.0
@@ -33413,7 +33383,7 @@ packages:
     engines: {node: '>=8.3'}
     dependencies:
       detect-indent: 6.1.0
-      graceful-fs: 4.2.9
+      graceful-fs: 4.2.10
       is-plain-obj: 2.1.0
       make-dir: 3.1.0
       sort-keys: 4.2.0
@@ -33510,7 +33480,7 @@ packages:
       estree-walker: 3.0.1
       got: 11.8.3
       hast-util-to-estree: 2.0.2
-      loader-utils: 2.0.2
+      loader-utils: 2.0.4
       markdown-extensions: 1.1.1
       mdast-util-mdx: 1.1.0
       micromark-extension-mdxjs: 1.0.0
