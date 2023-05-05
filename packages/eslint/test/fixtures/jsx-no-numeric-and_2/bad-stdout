@@ -1,0 +1,5 @@
+  15:7  error  React JSX 中不允许 number 数字类型直接和 && 使用，建议转成 !!number &&  rulesdir/jsx-no-numeric-and
+  16:7  error  React JSX 中不允许 number 数字类型直接和 && 使用，建议转成 !!number &&  rulesdir/jsx-no-numeric-and
+  17:7  error  React JSX 中不允许 number 数字类型直接和 && 使用，建议转成 !!number &&  rulesdir/jsx-no-numeric-and
+  18:7  error  React JSX 中不允许 number 数字类型直接和 && 使用，建议转成 !!number &&  rulesdir/jsx-no-numeric-and
+  19:7  error  React JSX 中不允许 number 数字类型直接和 && 使用，建议转成 !!number &&  rulesdir/jsx-no-numeric-and

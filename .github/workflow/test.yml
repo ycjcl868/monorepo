@@ -1,0 +1,22 @@
+name: Test
+on: [push]
+jobs:
+  eslint_test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: pnpm/action-setup@0609f0983b7a228f052f81ef4c3d6510cae254ad
+        with:
+          version: 7.32.2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'pnpm'
+      - uses: technote-space/get-diff-action@v6
+        with:
+          PATTERNS: |
+            packages/eslint/**/*
+      - run: pnpm install
+        if: env.GIT_DIFF
+      - run: pnpm --filter "@infras/eslint-config-local" test
+        if: env.GIT_DIFF

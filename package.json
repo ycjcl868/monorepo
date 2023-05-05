@@ -3,7 +3,7 @@
   "scripts": {
     "build:pkg": "pnpm run prepare -r"
   },
-  "packageManager": "pnpm@7.0.0",
+  "packageManager": "pnpm@7.32.2",
   "engines": {
     "node": ">=16"
   },

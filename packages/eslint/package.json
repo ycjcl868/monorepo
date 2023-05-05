@@ -1,0 +1,26 @@
+{
+  "name": "@infras/eslint-config-local",
+  "private": true,
+  "dependencies": {
+    "@rushstack/eslint-patch": "^1.2.0",
+    "@eslint-community/eslint-utils": "^4.4.0",
+    "@typescript-eslint/utils": "^5.58.0",
+    "eslint-plugin-rulesdir": "^0.2.2",
+    "@typescript-eslint/parser": "^5.47.0",
+    "typescript": "^4.9.5"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "@types/node": "^14.0.14",
+    "glob": "^10.0.0",
+    "vitest": "^0.29.7",
+    "tsutils": "^3.21.0"
+  },
+  "scripts": {
+    "dev": "vitest",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "eslint": "*"
+  }
+}

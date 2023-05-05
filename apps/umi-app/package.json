@@ -33,6 +33,7 @@
     }
   },
   "devDependencies": {
+    "@infras/eslint-config-local": "workspace:*",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "umi": "^4.0.0",

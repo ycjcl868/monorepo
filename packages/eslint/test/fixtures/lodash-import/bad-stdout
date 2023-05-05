@@ -1,0 +1,2 @@
+  1:1  error  请使用 lodash-es 模块代替 lodash 模块  rulesdir/lodash-import
+  2:1  error  请使用 lodash-es 模块代替 lodash 模块  rulesdir/lodash-import
