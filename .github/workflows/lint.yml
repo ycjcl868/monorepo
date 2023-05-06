@@ -22,5 +22,5 @@ jobs:
       - name: Eslint Checker
         if: env.GIT_DIFF
         run: |
-          echo "::set-output name=修复命令::npx eslint --no-error-on-unmatched-pattern --fix --quiet ${{ env.GIT_DIFF_FILTERED }}"
+          echo "修复命令 npx eslint --no-error-on-unmatched-pattern --fix --quiet ${{ env.GIT_DIFF_FILTERED }}"
           pnpm eslint --no-error-on-unmatched-pattern --quiet ${{ env.GIT_DIFF_FILTERED }}

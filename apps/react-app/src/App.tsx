@@ -4,6 +4,7 @@ import { Component } from '@infras/ui/react'
 import Logo from './logo.svg'
 
 function App() {
+  console.log('帐号')
   return (
     <div className='text-center'>
       <header className='bg-[#282c34] min-h-screen flex flex-col items-center justify-center text-[#fff] text-xl'>
