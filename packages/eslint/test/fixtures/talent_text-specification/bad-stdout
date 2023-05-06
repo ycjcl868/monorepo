@@ -2,7 +2,5 @@
 3:18  error  不允许使用 "帐户" 文案，建议改成 "账户"  rulesdir/text-specification
 4:18  error  不允许使用 "帐号" 文案，建议改成 "账号"  rulesdir/text-specification
 5:18  error  不允许使用 "帐号" 文案，建议改成 "账号"  rulesdir/text-specification
-6:18  error  不允许使用 "您" 文案，建议改成 "你"    rulesdir/text-specification
-7:18  error  不允许使用 "您" 文案，建议改成 "你"    rulesdir/text-specification
-8:18  error  不允许使用 "登陆" 文案，建议改成 "登录"  rulesdir/text-specification
-9:18  error  不允许使用 "登陆" 文案，建议改成 "登录"  rulesdir/text-specification
+6:18  error  不允许使用 "登陆" 文案，建议改成 "登录"  rulesdir/text-specification
+7:18  error  不允许使用 "登陆" 文案，建议改成 "登录"  rulesdir/text-specification
