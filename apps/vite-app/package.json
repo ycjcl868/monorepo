@@ -14,6 +14,7 @@
     "@infras/shared": "workspace:*"
   },
   "devDependencies": {
+    "@infras/eslint-config-local": "workspace:*",
     "@vitejs/plugin-vue": "^2.0.0",
     "vite-plugin-externals": "^0.3.2",
     "typescript": "^4.4.4",

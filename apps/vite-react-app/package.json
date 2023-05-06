@@ -14,6 +14,7 @@
     "@infras/shared": "workspace:*"
   },
   "devDependencies": {
+    "@infras/eslint-config-local": "workspace:*",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
     "@vitejs/plugin-react": "^1.0.7",

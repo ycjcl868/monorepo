@@ -1,0 +1,6 @@
+{
+  "**/*.{js,ts,jsx,tsx}": [
+    "eslint --no-error-on-unmatched-pattern",
+    "prettier --write"
+  ]
+}

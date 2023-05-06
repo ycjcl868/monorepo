@@ -1,6 +1,5 @@
 {
   "extends": [
-    "next/core-web-vitals",
     "@infras/eslint-config-local/react"
   ]
 }

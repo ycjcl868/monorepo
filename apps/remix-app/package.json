@@ -18,6 +18,7 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@infras/eslint-config-local": "workspace:*",
     "@remix-run/dev": "^1.6.5",
     "@remix-run/eslint-config": "^1.6.5",
     "@remix-run/serve": "^1.6.5",

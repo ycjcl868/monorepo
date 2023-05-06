@@ -13,6 +13,7 @@
     "postcss-windicss": "^1.0.0",
     "postcss": "^8.4.21",
     "postcss-loader": "^7.1.0",
+    "@infras/eslint-config-local": "workspace:*",
     "@types/jest": "^27.0.3",
     "@types/node": "^16.11.14",
     "@types/react": "^17.0.37",

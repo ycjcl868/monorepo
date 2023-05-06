@@ -3,13 +3,15 @@
   "scripts": {
     "build:pkg": "pnpm run prepare -r"
   },
-  "packageManager": "pnpm@7.0.0",
+  "packageManager": "pnpm@7.32.2",
   "engines": {
     "node": ">=16"
   },
   "devDependencies": {
     "prettier": "^2.5.1",
-    "turbo": "^1.1.2"
+    "turbo": "^1.1.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0"
   },
   "turbo": {
     "npmClient": "pnpm",

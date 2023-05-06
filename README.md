@@ -1,6 +1,7 @@
 # Monorepo
 
-[Better practice npm Package Design in Monorepo](https://www.rustc.cloud/monorepo-pkg) with [pnpm](https://pnpm.io/) and [turborepo](https://turborepo.org/), deploying into [Vercel](https://vercel.com/).
+- [Better practice npm Package Design in Monorepo](https://www.rustc.cloud/monorepo-pkg) with [pnpm](https://pnpm.io/) and [turborepo](https://turborepo.org/), deploying into [Vercel](https://vercel.com/).
+- [Creating a team-specific ESLint rule set using ChatGPT](https://www.rustc.cloud/eslint-gpt)
 
 ## Quick Start
 

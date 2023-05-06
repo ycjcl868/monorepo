@@ -1,0 +1,26 @@
+name: Lint staged
+on: [push]
+jobs:
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: pnpm/action-setup@0609f0983b7a228f052f81ef4c3d6510cae254ad
+        with:
+          version: 7.32.2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'pnpm'
+      - uses: technote-space/get-diff-action@v6
+        with:
+          PATTERNS: |
+            apps/**/*.+(ts|tsx|jsx|js)
+      - run: echo ${{ env.GIT_DIFF }}
+      - run: pnpm install --no-frozen-lockfile --ignore-scripts
+        if: env.GIT_DIFF
+      - name: Eslint Checker
+        if: env.GIT_DIFF
+        run: |
+          echo "修复命令 npx eslint --no-error-on-unmatched-pattern --fix --quiet ${{ env.GIT_DIFF_FILTERED }}"
+          pnpm eslint --no-error-on-unmatched-pattern --quiet ${{ env.GIT_DIFF_FILTERED }}
