@@ -5,19 +5,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: pnpm/action-setup@0609f0983b7a228f052f81ef4c3d6510cae254ad
-        with:
-          version: 7.32.2
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-          cache: 'pnpm'
+      - name: install pnpm
+        shell: bash
+        run: |
+          PNPM_VER=$(jq -r '.packageManager | if .[0:5] == "pnpm@" then .[5:] else "packageManager in package.json does not start with pnpm@\n" | halt_error(1)  end' package.json)
+          echo installing pnpm version $PNPM_VER
+          npm i -g pnpm@$PNPM_VER
       - uses: technote-space/get-diff-action@v6
         with:
           PATTERNS: |
             apps/**/*.+(ts|tsx|jsx|js)
+            .github/workflows/lint.yml
+      - uses: actions/setup-node@v3
+        if: env.GIT_DIFF
+        with:
+          node-version: '18'
+          cache: 'pnpm'
+          cache-dependency-path: '**/pnpm-lock.yaml'
       - run: echo ${{ env.GIT_DIFF }}
-      - run: pnpm install --no-frozen-lockfile --ignore-scripts
+      - run: pnpm install --ignore-scripts
         if: env.GIT_DIFF
       - name: Eslint Checker
         if: env.GIT_DIFF

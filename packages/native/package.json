@@ -11,10 +11,10 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@napi-rs/cli": "^2.12.0"
+    "@napi-rs/cli": "^2.15.2"
   },
   "engines": {
-    "node": ">=16"
+    "node": ">= 10"
   },
   "scripts": {
     "artifacts": "napi artifacts",
@@ -23,10 +23,5 @@
     "build:debug": "napi build --platform",
     "prepublishOnly": "napi prepublish -t npm",
     "version": "napi version"
-  },
-  "optionalDependencies": {
-    "@infras/native-win32-x64-msvc": "0.0.0",
-    "@infras/native-darwin-x64": "0.0.0",
-    "@infras/native-linux-x64-gnu": "0.0.0"
   }
 }

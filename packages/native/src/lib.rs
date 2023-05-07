@@ -1,14 +1,17 @@
-use napi_derive::napi;
+#![deny(clippy::all)]
+
+#[macro_use]
+extern crate napi_derive;
 
 #[napi]
-fn sum(a: f64, b: f64) -> f64 {
+pub fn sum(a: f64, b: f64) -> f64 {
   a + b
 }
 
 #[napi]
-fn fibonacci(n: u32) -> u32 {
+pub fn fibonacci(n: u32) -> u32 {
   match n {
     1 | 2 => 1,
-    _ => fibonacci(n-1) + fibonacci(n - 2)
+    _ => fibonacci(n - 1) + fibonacci(n - 2),
   }
 }
