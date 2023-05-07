@@ -11,15 +11,16 @@ jobs:
           PNPM_VER=$(jq -r '.packageManager | if .[0:5] == "pnpm@" then .[5:] else "packageManager in package.json does not start with pnpm@\n" | halt_error(1)  end' package.json)
           echo installing pnpm version $PNPM_VER
           npm i -g pnpm@$PNPM_VER
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-          cache: 'pnpm'
-          cache-dependency-path: '**/pnpm-lock.yaml'
       - uses: technote-space/get-diff-action@v6
         with:
           PATTERNS: |
             packages/eslint/**/*
+      - uses: actions/setup-node@v3
+        if: env.GIT_DIFF
+        with:
+          node-version: '18'
+          cache: 'pnpm'
+          cache-dependency-path: '**/pnpm-lock.yaml'
       - run: pnpm install --ignore-scripts
         if: env.GIT_DIFF
       - run: pnpm --filter "@infras/eslint-config-local" test
