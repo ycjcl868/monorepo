@@ -16,7 +16,7 @@ jobs:
         with:
           PATTERNS: |
             packages/eslint/**/*
-      - run: pnpm install --no-frozen-lockfile --ignore-scripts
+      - run: pnpm install --ignore-scripts
         if: env.GIT_DIFF
       - run: pnpm --filter "@infras/eslint-config-local" test
         if: env.GIT_DIFF
