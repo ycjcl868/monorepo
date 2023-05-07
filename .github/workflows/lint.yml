@@ -15,6 +15,7 @@ jobs:
         with:
           PATTERNS: |
             apps/**/*.+(ts|tsx|jsx|js)
+            .github/workflows/lint.yml
       - uses: actions/setup-node@v3
         if: env.GIT_DIFF
         with:
