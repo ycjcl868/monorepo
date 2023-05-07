@@ -12,6 +12,7 @@ jobs:
         with:
           node-version: '18'
           cache: 'pnpm'
+          cache-dependency-path: '**/pnpm-lock.yaml'
       - uses: technote-space/get-diff-action@v6
         with:
           PATTERNS: |
