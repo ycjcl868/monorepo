@@ -1,10 +1,13 @@
 {
   "extends": "./configs/tsconfig.base.json",
   "compilerOptions": {
+    "outDir": "./dist/esm",
     "declaration": true,
-    "target": "es6",
-    "module": "commonjs",
+    "declarationMap": true,
+    "target": "es2018",
+    "module": "Node16",
+    "moduleResolution": "Node16",
     "baseUrl": "."
   },
-  "include": ["**/*.ts"]
+  "include": ["src/**/*"]
 }

@@ -4,36 +4,37 @@
   "private": true,
   "description": "An infrastructure monorepo shared library for all projects and apps.",
   "scripts": {
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc -p tsconfig.json && echo '{\"type\": \"module\"}' > dist/esm/package.json",
+    "build:cjs": "tsc -p tsconfig.cjs.json && echo '{\"type\": \"commonjs\"}' > dist/cjs/package.json",
+    "prepack": "npm run build:esm && npm run build:cjs",
     "prepare": "npm run build",
-    "dev": "tsup --watch",
-    "build": "tsup"
+    "dev": "tsc -p tsconfig.json --watch"
   },
   "browser": {
-    "./types": "./dist/types/index.js",
-    "./utils": "./dist/utils/index.js"
+    "./types": "./dist/esm/types/index.js",
+    "./utils": "./dist/esm/utils/index.js"
   },
   "exports": {
-    "./types": {
-      "import": "./dist/types/index.mjs",
-      "require": "./dist/types/index.js"
-    },
-    "./utils": {
-      "import": "./dist/utils/index.mjs",
-      "require": "./dist/utils/index.js"
-    },
-    "./configs/*.json": "./configs/*.json",
-    "./configs/*": {
-      "require": "./dist/configs/*.js",
-      "import": "./dist/configs/*.mjs",
-      "types": "./dist/configs/*.d.ts"
+    "./configs/*": "./configs/*",
+    "./*": {
+      "import": "./dist/esm/*",
+      "require": "./dist/cjs/*"
     }
   },
+  "files": [
+    "dist",
+    "configs"
+  ],
   "devDependencies": {
-    "tsup": "^5.12.1",
     "typescript": "^4.7.4",
     "windicss": "^3.5.1"
   },
-  "keywords": ["shared", "utils", "types"],
+  "keywords": [
+    "shared",
+    "utils",
+    "types"
+  ],
   "author": "ycjcl868",
   "license": "ISC"
 }
